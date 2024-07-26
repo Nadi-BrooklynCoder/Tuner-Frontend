@@ -46,10 +46,18 @@ const SongDetails = () => {
                 <br />
                 Favorite: {song.is_favorite ? "Y" : "N" }
             </h3>
+            <div>
+                {" "}
+                <Link to={`/songs/${id}/edit`}>
+                    <button>Edit</button>
+                </Link>
+            </div>
              <div>
+                {" "}
                 <button onClick={handleDelete}>Delete</button>
             </div>
             <div>
+                {" "}
                 <button onClick={handleBack}>Back</button>
             </div>
         </article>
